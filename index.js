@@ -1,7 +1,12 @@
 const PORT = 8000
-const express = require('express')
-const axios = require('axios')
-const cheerio = require('cheerio')
+import express from 'express'
+import axios from 'axios'
+import cheerio from 'cheerio'
 
 const app = express()
+app.get('/', (req, res) => {
+    res.json('Welcome to my Climate Change Api')
+})
+
+
 app.listen(PORT, () => console.log('server running on PORT ${PORT}'))
