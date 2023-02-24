@@ -14,6 +14,8 @@ const app = express()
 app.get('/', (req, res) => {
     res.json('Some changes made to the running server')
 })
+
+
 // app.get('/news', (req, res) => {
 //     axios.get("https://chat.openai.com/chat")
 //         .then((response) => {
