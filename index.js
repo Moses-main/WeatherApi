@@ -1,9 +1,5 @@
 const port = 8000
 
-
-// import express from 'express'
-// import axios from 'axios'
-// import cheerio from 'cheerio'
 articles = []
 
 const express = require('express')
