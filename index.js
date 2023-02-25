@@ -11,10 +11,12 @@ const axios = require('axios')
 const cheerio = require('cheerio')
 const { response } = require('express')
 const app = express()
+
 app.get('/', (req, res) => {
-    res.json('Some changes made to the running server')
+    res.json('Welcome to my climate change API')
 })
 
+app.listen(PORT, () => console.log('Server is running on PORT${PORT}'))
 
 // app.get('/news', (req, res) => {
 //     axios.get("https://chat.openai.com/chat")
@@ -35,4 +37,4 @@ app.get('/', (req, res) => {
 // })
 
 // app.listen(PORT, () => console.log('server running on PORT ${PORT}'))
-app.listen(PORT, () => console.log('server is running on port ${PORT}'))
+// app.listen(PORT, () => console.log('server is running on port ${PORT}'))
